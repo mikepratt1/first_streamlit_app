@@ -24,7 +24,7 @@ streamlit.dataframe(fruits_to_show)
 # New section to display fruityvice api response
 
 def get_fruityvice_data(this_fruit_choice):
-   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
    fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
    return fruitvice_normalized
 
