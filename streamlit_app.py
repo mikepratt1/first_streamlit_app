@@ -35,10 +35,10 @@ try:
 except URLError as e:
    streamlit.error()
 
-# Puts data into a nice dataframe
-fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
-# displays the df
-streamlit.dataframe(fruityvice_normalized)
+# # Puts data into a nice dataframe
+# fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+# # displays the df
+# streamlit.dataframe(fruityvice_normalized)
 
 streamlit.stop()
 # Snowflake stuff
